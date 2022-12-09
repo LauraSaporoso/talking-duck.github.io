@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    background: linear-gradient(#3535ec, #b62897);
+    background-attachment: fixed;
+    color: white;
+}
+
+img {
+    max-width: 100%; /*con percentuale mi riferisco al contenitore - quindi larghezza massima non può superare quella del suo contenitore */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+    max-width: 400px;
+    margin-top: 40px;;
+}
+
+header img {
+    width: 56px;
+}
+
+/* Casella di testo */
+
+textarea {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 100%;
+    height: 120px;
+    resize: none;  /* caratteristica che ha di base */
+    outline: none; /* caratteristica che ha di base */
+    border: none;  /* caratteristica che ha di base */
+
+    border-radius: 16px;
+    font-size: 20px;
+    padding: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Comandi */
+.comandi {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+/* Bottone play */ 
+button {
+    width: 64px;
+    height: 56px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f81669;
+}
+
+/* stile del bottone solo quando è disable */
+button:disabled {
+    opacity: 0.6;
+    background-color: #dedede;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+  
+button:active {
+    transform: scale(0.8);
+}
+
+button img {
+   vertical-align: middle; 
+}
+
+/* Pitch controls */
+.pitch-controls {
+    width: 70%;
+}
+
+/* barra del tono della voce */
+input {
+    width: 100%;
+    accent-color: white; /* accent color cambia colore pallina e barra */
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+/* paperella */
+
+.animated-duck {
+    display: none;
+}
+
+.talking .animated-duck {
+    display: block;
+}
+
+.talking .static-duck {
+    display: none;
+} 
